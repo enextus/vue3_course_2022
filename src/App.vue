@@ -2,14 +2,22 @@
   <div class="app">
 
     // form
+    <post-form/>
 
     // posts
+    <post-list/>
 
   </div>
 </template>
 
 <script>
+import PostForm from "@/components/PostForm";
+import PostList from "@/components/PostList";
+
 export default {
+  components: {
+    PostForm, PostList
+  },
   data() {
     return {
       posts: [
