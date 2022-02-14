@@ -1,6 +1,7 @@
 <template>
-  <div>
-
+  <div class="post" v-for="post in posts">
+    <div><strong>Post name:</strong> {{ post.title }}</div>
+    <div><strong>Description:</strong> {{ post.body }}</div>
   </div>
 </template>
 
@@ -9,6 +10,10 @@
 
 </script>
 
-<style>
-
+<style scoped>
+.post {
+  padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+}
 </style>
