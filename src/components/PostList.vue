@@ -3,16 +3,12 @@
     <h3>User list</h3>
     <post-item
       v-for="post in posts"
-      :post="post"
-
-    >
-      <!--      <div><strong>Post name:</strong> {{ post.title }}</div>
+      :post="post">
+      <!--  <div><strong>Post name:</strong> {{ post.title }}</div>
             <div><strong>Description:</strong> {{ post.body }}</div>-->
     </post-item>
   </div>
-
 </template>
-
 
 <script>
 import PostItem from "@/components/PostItem";
@@ -29,9 +25,4 @@ export default {
 </script>
 
 <style scoped>
-.post {
-  padding: 15px;
-  border: 2px solid teal;
-  margin-top: 15px;
-}
 </style>
