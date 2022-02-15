@@ -1,12 +1,7 @@
 <template>
   <div class="app">
-
-    // form
     <post-form/>
-
-    // posts
-    <post-list/>
-
+    <post-list :posts="posts"/>
   </div>
 </template>
 
@@ -34,33 +29,7 @@ export default {
   },
   methods: {
     createPost() {
-      let timer = 3;
 
-      if (this.title && this.body) {
-        const newPost = {
-          id: Date.now(),
-          title: this.title,
-          body: this.body,
-        }
-        this.posts.push(newPost);
-
-        this.title = 'published';
-        this.body = 'published';
-
-        let interval = setInterval(() => {
-          if (timer === 0) {
-            this.title = '';
-            this.body = '';
-            clearInterval(interval)
-          } else {
-            timer--
-            // console.log(timer)
-          }
-        }, 100)
-      } else {
-        this.title = '';
-        this.body = '';
-      }
 
     },
     // function or @input="title = $event.target.value"
