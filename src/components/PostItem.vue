@@ -5,7 +5,11 @@
       <div><strong>Description:</strong> {{ post.body }}</div>
     </div>
     <div class="post__btns">
-      <button>Delete</button>
+      <my-button
+        style="align-self: flex-end"
+        @click="deletePostChild">
+        Delete post
+      </my-button>
     </div>
   </div>
 </template>
@@ -16,6 +20,11 @@ export default {
     post: {
       type: Object,
       required: true,
+    }
+  },
+  methods: {
+    deletePostChild() {
+      console.log();
     }
   }
 }
