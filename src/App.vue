@@ -1,7 +1,12 @@
 <template>
   <div class="app">
-    <post-form/>
-    <post-list :posts="posts"/>
+    <post-form
+      @create="createPostParent"
+    />
+    <post-list
+      :posts="posts"
+
+    />
   </div>
 </template>
 
@@ -19,19 +24,21 @@ export default {
         {id: 1, title: 'JavaScript 1', body: 'Description 1'},
         {id: 2, title: 'JavaScript 2', body: 'Description 2'},
         {id: 3, title: 'JavaScript 3', body: 'Description 3'},
-        {id: 4, title: 'JavaScript 3', body: 'Description 4'},
+        {id: 4, title: 'JavaScript 4', body: 'Description 4'},
       ],
-
-      title: '',
-      body: ''
 
     }
   },
   methods: {
-    createPost() {
+    createPostParent(post, parameter011, parameter012, parameter013) {
+      console.log(post);
+      console.log(parameter011);
+      console.log(parameter012);
+      console.log(parameter013);
 
 
     },
+
     // function or @input="title = $event.target.value"
     inputBody(event) {
       // console.log(event)
