@@ -1,8 +1,5 @@
 <template>
-  <div class="post" v-for="post in posts">
-    <div><strong>Post name:</strong> {{ post.title }}</div>
-    <div><strong>Description:</strong> {{ post.body }}</div>
-  </div>
+
 </template>
 
 
