@@ -14,6 +14,7 @@
 import PostItem from "@/components/PostItem";
 
 export default {
+  // register of the component
   components: {PostItem},
   props: {
     posts: {
