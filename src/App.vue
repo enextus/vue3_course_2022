@@ -36,6 +36,7 @@ export default {
       console.log(parameter012);
       console.log(parameter013);
 
+      this.posts.push(post);
 
     },
 

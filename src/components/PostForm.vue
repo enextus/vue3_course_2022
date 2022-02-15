@@ -1,6 +1,5 @@
 <template>
   <form @submit.prevent>
-
     <h4>Create post</h4>
 
     <!--    :value="title"-->
@@ -21,13 +20,12 @@
 
     <button
       class="btn"
-      @click="createPost"
+      @click="createPostChild"
     >Create post
     </button>
 
   </form>
 </template>
-
 
 <script>
 export default {
@@ -40,8 +38,8 @@ export default {
     }
   },
   methods: {
-    createPost() {
-
+    createPostChild() {
+      let timer = 2;
       this.post.id = Date.now();
       /*        const newPost = {
                 id: Date.now(),
@@ -49,36 +47,30 @@ export default {
                 body: this.body,
               }*/
 
+      if (this.post.title && this.post.body || this.post.title) {
+        // create is the name of the event and this.post are data for parent component App
+        this.$emit('create', this.post, 'parameter011', 'parameter012', 'parameter013')
+        this.post = {
+          title: 'Published!',
+          body: 'Published!'
+        }
 
-      // create is the name of the event and this.post are data for parent component App
-      this.$emit('create', this.post, 'parameter011', 'parameter012', 'parameter013')
-      this.post = {
-        title: '',
-        body: ''
+        let interval = setInterval(() => {
+          if (timer === 0) {
+            this.post.title = '';
+            this.post.body = '';
+            clearInterval(interval)
+          } else {
+            timer--
+            // console.log(timer)
+          }
+        }, 100)
+      } else {
+        this.post = {
+          title: '',
+          body: ''
+        }
       }
-
-      // this.posts.push(newPost);
-
-      /*      if (this.title && this.body) {
-              this.title = 'published';
-              this.body = 'published';
-
-
-              let timer = 3;
-              let interval = setInterval(() => {
-                if (timer === 0) {
-                  this.title = '';
-                  this.body = '';
-                  clearInterval(interval)
-                } else {
-                  timer--
-                  // console.log(timer)
-                }
-              }, 100)
-            } else {
-              this.title = '';
-              this.body = '';
-            }*/
     }
   }
 }
