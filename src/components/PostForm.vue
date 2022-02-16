@@ -4,13 +4,14 @@
 
     <!--    :value="title"-->
     <!--    @input="post.title = $event.target.value"-->
+<!--    v-model="post.title"-->
     <my-input type="text"
-              v-model="post.title"
+              v-model:value="post.title"
               placeholder="Title">
     </my-input>
 
     <my-input type="text"
-              v-model="post.body"
+              v-model:value="post.body"
               placeholder="Body">
     </my-input>
 

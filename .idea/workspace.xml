@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4619043d-837c-4e73-9c7b-0c57da16189d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/UI/MyInput.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PostForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/MyInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/MyInput.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
       <updated>1644931344005</updated>
       <workItem from="1644931346946" duration="4966000" />
       <workItem from="1645010466649" duration="4000" />
-      <workItem from="1645011579325" duration="2846000" />
+      <workItem from="1645011579325" duration="3309000" />
     </task>
     <servers />
   </component>
