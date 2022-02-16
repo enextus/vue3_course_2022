@@ -5,7 +5,7 @@
     />
     <post-list
       :posts="posts"
-
+      @remove="removePost"
     />
   </div>
 </template>
@@ -31,13 +31,17 @@ export default {
   },
   methods: {
     createPostParent(post, parameter011, parameter012, parameter013) {
-      console.log(post);
-      console.log(parameter011);
-      console.log(parameter012);
-      console.log(parameter013);
+      // console.log(post);
+      // console.log(parameter011);
+      // console.log(parameter012);
+      // console.log(parameter013);
 
       this.posts.push(post);
 
+    },
+
+    removePost(post) {
+      this.posts = this.posts.filter(p => p.id !== post.id)
     },
 
     // function or @input="title = $event.target.value"

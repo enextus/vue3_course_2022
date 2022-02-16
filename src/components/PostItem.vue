@@ -7,7 +7,7 @@
     <div class="post__btns">
       <my-button
         style="align-self: flex-end"
-        @click="deletePostChild">
+        @click="$emit('remove', post)">
         Delete post
       </my-button>
     </div>
