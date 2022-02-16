@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4619043d-837c-4e73-9c7b-0c57da16189d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/UI/MyInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PostForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -21,6 +25,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="259FLQXO9it8NI9MkLQTq7xn9zr" />
   <component name="ProjectViewState">
@@ -45,7 +52,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644931344005</updated>
-      <workItem from="1644931346946" duration="4907000" />
+      <workItem from="1644931346946" duration="4966000" />
+      <workItem from="1645010466649" duration="4000" />
+      <workItem from="1645011579325" duration="2846000" />
     </task>
     <servers />
   </component>

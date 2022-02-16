@@ -4,26 +4,21 @@
 
     <!--    :value="title"-->
     <!--    @input="post.title = $event.target.value"-->
-    <input
-      v-model="post.title"
-      class="input"
-      type="text"
-      placeholder="Name">
+    <my-input type="text"
+              v-model="post.title"
+              placeholder="Title">
+    </my-input>
 
-    <!-- :value="body"
-         @input="post.body = $event.target.value"-->
-    <input
-      v-model="post.body"
-      class="input"
-      type="text"
-      placeholder="Description">
+    <my-input type="text"
+              v-model="post.body"
+              placeholder="Body">
+    </my-input>
 
     <my-button
       style="align-self: flex-end; margin-top: 15px"
       @click="createPostChild">
       Create post
     </my-button>
-
   </form>
 </template>
 
@@ -77,10 +72,5 @@ export default {
 </script>
 
 <style scoped>
-.input {
-  width: 100%;
-  border: 1px solid teal;
-  padding: 10px 15px;
-  margin-top: 5px;
-}
+
 </style>
